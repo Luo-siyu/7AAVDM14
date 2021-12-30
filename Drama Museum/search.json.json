@@ -1,0 +1,16 @@
+---
+---
+[
+  {% for exhibit in site.exhibits %}
+    {
+
+      "title"    : "{{ exhibit.title }}",
+      "category" : "{{ exhibit.category }}",
+      "tags"     : "{{ exhibit.tags }}",
+      "writer"   : "{{ exhibit.writer }}",
+      "date"     : "{{ exhibit.date }}",
+      "licence"  : "{{ exhibit.licence }}"
+
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

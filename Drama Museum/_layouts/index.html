@@ -6,8 +6,8 @@
     <title>{{ page.title }}</title>
 </head>
 <body>
-    <div class="container">
-        <nav class="header"
+    <div id = "wrapper">
+        <nav class="header">
             <a href="{{ site.baseurl }}/">Little Life in Drama</a>
             <a href="{{ site.baseurl }}/top_Picks">Top Picks</a>
             <a href="{{ site.baseurl }}/plays">Plays</a>
@@ -16,7 +16,28 @@
             <a href="{{ site.baseurl }}/dram_in_london">Explore Drama in London</a>
             <a href="{{ site.baseurl }}/search">Search</a>
         </nav>
-    <div class="container">
+    </div>
+    <div id = "content">
         {{ content }}
     </div>
+    <div id = "footer">
+        <div id="wrapper">
+            <footer class="tag"
+
+
+           <p>Search by category</p>
+<a href="{{ plays }}/">Plays</a>
+<a href="{{ dance }}">Dance</a>
+<a href="{{ opera and Musicals }}">Opera_and_Musicals</a>
+<a href="{{ 1800s-1840s }}">1800s-1840s</a>
+<a href="{{ 1850s-1890s }}">1850s-1890s</a>
+<a href="{{ 1900s-1950s }}">1900s-1950s</a>
+<a href="{{ after 1950s }}">After 1950s</a>
+<a href="{{ others }}">Others</a>
+
+        </div>
+        <p>Please<a href = "{{ site.baseurl }}/contact_us">Contact us</a>> if you have any questions</p>
+        <p>Created with <a href = "https://jekyllrb.com/">Jekyll</a> for learning purposes by <a href = "https://github.com/Luo-siyu">Luo siyu</a> in 2021</p>
+    </div>
+</div>
 </body>
